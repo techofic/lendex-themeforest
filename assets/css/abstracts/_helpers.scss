@@ -1,0 +1,58 @@
+@use './variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Add styles here
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pt-135 {
+    padding-top: 135px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pb-135 {
+    padding-bottom: 135px;
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+.mb-n6 {
+    margin-bottom: -25px;
+}
+.mb-6 {
+    margin-bottom: 25px;
+}
+.pos-relative {
+    position: relative;
+}
+.bg-dark-blue {
+    background-color: #252734;
+}
+.bg-secondary-blue {
+    background-color: #2a2c39;
+}
+.bg-light-blue {
+    background-color: #30313d;
+}

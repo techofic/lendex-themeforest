@@ -1,0 +1,180 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Add styles here
+
+.footer-section {
+    overflow: hidden;
+    position: relative;
+
+    .shape-left {
+        top: -575px;
+        left: -490px;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 50%;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 935px;
+            height: 935px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 50%;
+            top: -70px;
+            left: -70px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1065px;
+            height: 1065px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 50%;
+            top: -140px;
+            left: -140px;
+        }
+    }
+
+    .shape-right {
+        top: -575px;
+        right: -490px;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 50%;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 935px;
+            height: 935px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 50%;
+            top: -70px;
+            right: -70px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1065px;
+            height: 1065px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 50%;
+            top: -140px;
+            right: -140px;
+        }
+    }
+
+    .footer-header {
+        text-align: center;
+    }
+
+    .footer-newsletter {
+        text-align: center;
+
+        input {
+            width: 615px;
+            padding: 20px 40px;
+            margin-right: 20px;
+            border-radius: 32.5px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            background: 0 0;
+            color: #fff;
+        }
+
+        .submit-btn {
+            padding: 20px 40px;
+            margin-top: 0;
+            border-radius: 32.5px;
+            border: 1px solid #2e303d;
+            background: #2e303d;
+            color: #fff;
+            transition: all 0.5s ease;
+
+            &:hover {
+                border: 1px solid #ffffff;
+            }
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .single-item {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            span {
+                width: 85px;
+                height: 85px;
+                margin-right: 30px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, .1);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                color: #fff;
+                transition: all .5s ease;
+            }
+
+            .text {
+                font-size: 32px;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+
+                    a {
+
+                        height: 60px;
+                        width: 60px;
+                        line-height: 60px;
+                        display: block;
+                        color: #fff;
+                        border-radius: 50%;
+                        border: 1px solid rgba(255,255,255,.1);
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .info {
+        border-top: 1px solid $secondaryColor;
+        padding: 20px 0;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer-copyright {
+                color: $secondaryColor;
+                span {
+                    color: #ffffff;
+                }
+            }
+            .footer-logo {
+                font-size: 32px;
+            }
+        }
+    }
+}

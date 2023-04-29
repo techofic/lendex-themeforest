@@ -1,0 +1,96 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Carousel CSS
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+.service-carousel {
+    .owl-nav.disabled+.owl-dots {
+        margin-top: 50px;
+    }
+
+    .owl-dots .owl-dot span {
+        width: 12px;
+        height: 12px;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .owl-dots .owl-dot span {
+        background: #4f4f4f;
+    }
+
+    .owl-dots .owl-dot.active span,
+    .owl-dots .owl-dot:hover span {
+        background: #ffffff;
+    }
+}
+
+.project-carousel {
+    .owl-nav {
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-200px, -258px);
+
+        button.owl-prev {
+            width: 85px;
+            height: 85px;
+            border: 1px solid #858792;
+            border-radius: 50%;
+
+            span {
+                display: none;
+            }
+        }
+
+        button.owl-next {
+            width: 85px;
+            height: 85px;
+            border: 1px solid;
+            border-radius: 50%;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.testomonial-carousel {
+    .owl-nav {
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(161px, -155px);
+
+        button.owl-prev {
+            width: 85px;
+            height: 85px;
+            border: 1px solid #858792;
+            border-radius: 50%;
+            margin: 0 20px 0 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        button.owl-next {
+            width: 85px;
+            height: 85px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 0;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}

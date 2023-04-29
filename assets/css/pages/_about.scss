@@ -1,0 +1,140 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.video-card {
+    height: 463.5px;
+    padding: 30px;
+    background: #252734;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vbox-item {
+    font-size: 50px;
+    color: $secondaryColor;
+}
+
+.video-info-content {
+    margin-top: 0;
+    text-align: left;
+
+    .title {
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .sub-title {
+        font-size: 45px;
+        font-weight: 400;
+        color: $secondaryColor;
+        line-height: 1.5;
+    }
+
+    p {
+        margin-top: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.resume-tab {
+    margin-bottom: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &.nav {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .nav-item {
+        width: calc(50% - 17.5px);
+        margin-bottom: 0;
+
+        button {
+            font-size: 58px;
+            background: #252734;
+            border: 1px solid rgba(255, 255, 255, .1);
+            font-family: "Cormorant Garamond", serif;
+            color: #fff;
+            display: block;
+            width: 100%;
+
+            &.active {
+                border-color: #2a2c39;
+                background: #2a2c39;
+            }
+        }
+    }
+
+    &-list-single-item {
+        &:first-child>.content>.left {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+        }
+        &:last-child>.content>.left {
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+        }
+        .content {
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+
+            .left {
+                padding: 103px 30px 105px 170px;
+                margin-right: 100px;
+                border-left: 1px solid rgba(255, 255, 255, .1);
+                border-right: 1px solid rgba(255, 255, 255, .1);
+                border-bottom: none;
+                border-top: none;
+                width: 300px;
+                margin-bottom: 0;
+                position: relative;
+                .year {
+                    display: block;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 50px;
+                        width: 1px;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background: #fff;
+                    }
+                }
+            }
+            .right {
+                width: calc(100% - 400px);
+                margin-bottom: 35px;
+                .title {
+                    font-size: 35px;
+                    font-weight: 400;
+                    margin-bottom: 25px;
+                }
+                p:last-child {
+                    margin-top: 25px;
+                    margin-bottom: 0;
+                }
+                .institute-name {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+
+
+.about-btn {
+    margin-top: 95px;
+    padding: 6px 60px;
+}

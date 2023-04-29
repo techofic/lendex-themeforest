@@ -1,0 +1,15 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+.service-details--box {
+    position: relative;
+    z-index: 2;
+
+    .service-content-section {
+        .content-hero-image {
+            margin-bottom: 65px;
+        }
+    }
+}

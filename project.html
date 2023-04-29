@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendex</title>
+
+    <!--================= Link CSS Here =================-->
+    <!-- Vendor CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./assets/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/owl.theme.default.min.css">
+
+    <!-- Line Awesome Icon CSS -->
+    <link rel="stylesheet" href="./assets/icon/css/line-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--************Header****************-->
+
+    <header class="header-section d-lg-block d-none sticky-header sticky">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/img/logo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="header-nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="has-dropdown">
+                                <a href="service.html">Service</a>
+                                <ul class="submenu">
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="serviceDetails.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog.html">Blog List Full Width</a></li>
+                                    <li><a href="blogLeftSidebar.html">Blog List Left Sidebar</a></li>
+                                    <li><a href="blogRightSidebar.html">Blog List Right Sidebar</a></li>
+                                    <li><a href="blogDetails.html">Blog Details Full Width</a></li>
+                                    <li><a href="blogDetailsLeft.html">Blog Details Left Sidebar</a></li>
+                                    <li><a href="blogDetailsRight.html">Blog Details Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Pages</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="project.html">Project</a></li>
+                                    <li><a href="projectDetails.html">Project Details</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="error.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="header-btn-link text-end">
+                            <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Hire Me
+                                <i class="las la-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--************Mobile-Header****************-->
+
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="mobile-logo">
+                        <a href="#">
+                            <img src="./assets/img/logo.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-action-link text-end">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <i class="las la-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Offcanvas****************-->
+
+    <div class="offcanvas offcanvas-end navbar-content__item" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="close-btn">
+                <i class="las la-times"></i>
+            </button>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- <div class="offcanvas-body">
+            <div class="mobile-menu-bottom">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="home.html">
+                                <span>HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>SERVICES</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="service.html"></a>SERVICE LIST</li>
+                                    <li><a href="serviceDetails.html">SERVICE DETAILS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>BLOG</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="blog.html"></a>BLOG LIST FULL WIDTH</li>
+                                    <li><a href="blogLeftSidebar.html"></a>BLOG LIST LEFT SIDEBAR</li>
+                                    <li><a href="blogRightSidebar.html"></a>BLOG LIST RIGHT SIDEBAR</li>
+                                    <li><a href="blogDetails.html"></a>BLOG DETAILS FULL WIDTH</li>
+                                    <li><a href="blogDetailsLeft.html"></a>BLOG DETAILS LEFT SIDEBAR</li>
+                                    <li><a href="blogDetailsRight.html"></a>BLOG DETAILS RIGHT SIDEBAR</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>PAGES</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about.html"></a>ABOUT US</li>
+                                    <li><a href="project.html">PROJECT</a></li>
+                                    <li><a href="projectDetails.html">PROJECT DETAILS</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="error.html">404 PAGE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span>CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="service.html">SERVICE LIST</a></li>
+                        <li><a class="dropdown-item" href="serviceDetails.html">SERVICE DETAILS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blog.html">BLOG LIST FULL WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogLeftSidebar.html">BLOG LIST LEFT SIDEBAR</a></li>
+                        <li><a class="dropdown-item" href="blogRightSidebar.html">BLOG LIST RIGHT WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogDetails.html">BLOG DETAILS FULL WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogDetailsLeft.html">BLOG DETAILS LEFT SIDEBAR</a></li>
+                        <li><a class="dropdown-item" href="blogDetailsRight.html">BLOG DETAILS RIGHT SIDEBAR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        PAGES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="project.html">PROJECT</a></li>
+                        <li><a class="dropdown-item" href="projectDetails.html">PROJECT DETAILS</a></li>
+                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        <li><a class="dropdown-item" href="error.html">404 PAGE</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--************Project-Header****************-->
+
+    <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-shape-top-left">
+        </div>
+        <div class="breadcrumb-shape-bottom-right">
+        </div>
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <h2 class="title">Projects</h2>
+                            <ul class="breadcrumb-link">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="active">
+                                    Projects List
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Project-Body****************-->
+
+    <div class="project-section bg-secondary-blue pb-135 pt-135">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="projects-gallery-filter-nav">
+                        <button class="main-button pro-btn active" data-filter="*">All</button>
+                        <button class="main-button pro-btn" data-filter=".html">HTML</button>
+                        <button class="main-button pro-btn" data-filter=".wordpress">Wordpress</button>
+                        <button class="main-button pro-btn" data-filter=".shopify">Shopify</button>
+                        <button class="main-button pro-btn" data-filter=".seo">SEO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="projects-wrapper-gallery-content">
+                        <div class="row">
+                            <div class="col-md-6 filter-item html">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-1.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Givest - Non Profit PSD Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item industwordpressrial">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-2.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-2.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Musion – Gardening HTML Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item shopify">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-3.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-3.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">SEOLLY - SEO Marketing & Digital Agency</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item seo">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-4.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-4.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Asore - Business Bootstrap 5 Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item html">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-5.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-5.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Virtuf - Creative Agency Bootstrap 5 Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item wordpress">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-6.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-6.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Tourve - Travel Agency Bootstrap 5 Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item shopify">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-7.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-7.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Induste - Industrial & Factory Bootstrap 5 Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 filter-item seo">
+                                <div class="project-single--item pb-30">
+                                    <div class="img-box">
+                                        <div class="bg-overlay">
+                                        </div>
+                                        <div class="bg-image">
+                                            <img src="./assets/img/project-slider-img-8.webp" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="./assets/img/project-slider-img-8.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Consor - Multi Purpose One Page PSD Template</h4>
+                                        <ul class="category-nav-item">
+                                            <li>Charity</li>
+                                            <li>/ Fund Rising</li>
+                                            <li>/ Non Profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Footer****************-->
+
+    <footer>
+        <div class="footer-section pt-135 bg-dark-blue">
+            <div class="shape-left">
+
+            </div>
+            <div class="shape-right">
+
+            </div>
+            <div class="container">
+                <div class="footer-header">
+                    <div class="section-header">
+                        <h4 class="subtitle">
+                            <span>||</span>Get Latest update
+                        </h4>
+                        <h4 class="title">
+                            Subscribe for Newsletter
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer-newsletter pb-135" action="#">
+                    <form>
+                        <input type="email" placeholder="demo@example.com">
+                        <button class="submit-btn" type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+                <div class="footer-contact pb-135">
+                    <div class="single-item">
+                        <span> <i class="las la-phone"></i>
+                        </span>
+                        <h4 class="text">0123456789</h4>
+                    </div>
+                    <div class="single-item">
+                        <span><i class="las la-envelope-open"></i></span>
+                        <h4 class="text">demo@gmail.com</h4>
+                    </div>
+                    <div class="single-item">
+                        <ul>
+                            <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="lab la-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="container">
+                    <div class="info-item">
+                        <div class="footer-copyright">
+                            © 2021
+                            <span>Lendex</span>
+                            Made with
+                            <span><i class="las la-heart"></i></span>
+                            by
+                            <span>HasThemes</span>
+                        </div>
+                        <div class="footer-logo">Lendex</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--================= Link Script Here =================-->
+    <!-- Vendor Script -->
+    <script src="./assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/vendor/owl.carousel.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

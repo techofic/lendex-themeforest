@@ -1,0 +1,10 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.service {
+    &-cards {
+        position: relative;
+        z-index: 2;
+    }
+}

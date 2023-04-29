@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendex</title>
+
+    <!--================= Link CSS Here =================-->
+    <!-- Vendor CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./assets/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/owl.theme.default.min.css">
+
+    <!-- Line Awesome Icon CSS -->
+    <link rel="stylesheet" href="./assets/icon/css/line-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--************Header****************-->
+
+    <header class="header-section d-lg-block d-none sticky-header sticky">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/img/logo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="header-nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="has-dropdown">
+                                <a href="service.html">Service</a>
+                                <ul class="submenu">
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="serviceDetails.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog.html">Blog List Full Width</a></li>
+                                    <li><a href="blogLeftSidebar.html">Blog List Left Sidebar</a></li>
+                                    <li><a href="blogRightSidebar.html">Blog List Right Sidebar</a></li>
+                                    <li><a href="blogDetails.html">Blog Details Full Width</a></li>
+                                    <li><a href="blogDetailsLeft.html">Blog Details Left Sidebar</a></li>
+                                    <li><a href="blogDetailsRight.html">Blog Details Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Pages</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="project.html">Project</a></li>
+                                    <li><a href="projectDetails.html">Project Details</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="error.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="header-btn-link text-end">
+                            <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Hire Me
+                                <i class="las la-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--************Mobile-Header****************-->
+
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="mobile-logo">
+                        <a href="#">
+                            <img src="./assets/img/logo.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-action-link text-end">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <i class="las la-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Offcanvas****************-->
+
+    <div class="offcanvas offcanvas-end navbar-content__item" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="close-btn">
+                <i class="las la-times"></i>
+            </button>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- <div class="offcanvas-body">
+            <div class="mobile-menu-bottom">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="home.html">
+                                <span>HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>SERVICES</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="service.html"></a>SERVICE LIST</li>
+                                    <li><a href="serviceDetails.html">SERVICE DETAILS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>BLOG</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="blog.html"></a>BLOG LIST FULL WIDTH</li>
+                                    <li><a href="blogLeftSidebar.html"></a>BLOG LIST LEFT SIDEBAR</li>
+                                    <li><a href="blogRightSidebar.html"></a>BLOG LIST RIGHT SIDEBAR</li>
+                                    <li><a href="blogDetails.html"></a>BLOG DETAILS FULL WIDTH</li>
+                                    <li><a href="blogDetailsLeft.html"></a>BLOG DETAILS LEFT SIDEBAR</li>
+                                    <li><a href="blogDetailsRight.html"></a>BLOG DETAILS RIGHT SIDEBAR</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offcanvas-menu-expand">
+                                <a href="#">
+                                    <span>PAGES</span>
+                                </a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about.html"></a>ABOUT US</li>
+                                    <li><a href="project.html">PROJECT</a></li>
+                                    <li><a href="projectDetails.html">PROJECT DETAILS</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="error.html">404 PAGE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span>CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="service.html">SERVICE LIST</a></li>
+                        <li><a class="dropdown-item" href="serviceDetails.html">SERVICE DETAILS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blog.html">BLOG LIST FULL WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogLeftSidebar.html">BLOG LIST LEFT SIDEBAR</a></li>
+                        <li><a class="dropdown-item" href="blogRightSidebar.html">BLOG LIST RIGHT WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogDetails.html">BLOG DETAILS FULL WIDTH</a></li>
+                        <li><a class="dropdown-item" href="blogDetailsLeft.html">BLOG DETAILS LEFT SIDEBAR</a></li>
+                        <li><a class="dropdown-item" href="blogDetailsRight.html">BLOG DETAILS RIGHT SIDEBAR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        PAGES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="project.html">PROJECT</a></li>
+                        <li><a class="dropdown-item" href="projectDetails.html">PROJECT DETAILS</a></li>
+                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        <li><a class="dropdown-item" href="error.html">404 PAGE</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--************Blog-Right-Header****************-->
+
+    <div class="breadcrumb-section bg-dark-blue overflow-hidden pos-relative">
+        <div class="breadcrumb-shape-top-left">
+        </div>
+        <div class="breadcrumb-shape-bottom-right">
+        </div>
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <h2 class="title">Blog List Right Sidebar</h2>
+                            <ul class="breadcrumb-link">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="active">
+                                    Blog List Right Sidebar
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Blog-Right-Header****************-->
+
+    <div class="blog-list-box pb-135 pt-135 bg-secondary-blue">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="blog-section--list">
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-1.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-2.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-3.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-4.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-5.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-6.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/blog-feed-img-7.webp" alt="">
+                            </a>
+                            <div class="content-box">
+                                <div class="content">
+                                    <div class="post-meta">
+                                        <div class="category">Business <span>-</span></div>
+                                        <a href="#" class="date">07 February, 2021</a>
+                                    </div>
+                                    <div class="title">
+                                        Don't wait until you officially started business.
+                                    </div>
+                                    <div class="post-meta-2">
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-user"></i>
+                                            Rolland Abell
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-heart"></i>
+                                            5,678
+                                        </a>
+                                        <a href="#" class="icon-space-right">
+                                            <i class="las la-comments"></i>
+                                            2,567
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="pagination">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="pagination-nav-list">
+                                        <li class="prev">
+                                            <a href="#">
+                                                <i class="las la-angle-double-left"></i>
+                                            </a>
+                                        </li>
+                                        <li>1</li>
+                                        <li class="active">2</li>
+                                        <li>3</li>
+                                        <li class="prev">
+                                            <a href="#">
+                                                <i class="las la-angle-double-right"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="sidebar-widget-area">
+                        <div class="sidebar-widget-single-area search-widgets">
+                            <form class="search-widgets-box" action="#">
+                                <input type="search" placeholder="Search here">
+                                <button>
+                                    <i class="las la-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="sidebar-widget-single-area category-widgets">
+                            <h3 class="title">Category</h3>
+                            <ul class="widget-nav-list category-item-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="text">UI/UX Design</span>
+                                        <span class="icon"><i class="las la-angle-double-right"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Web Development</span>
+                                        <span class="icon"><i class="las la-angle-double-right"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Brand Identity</span>
+                                        <span class="icon"><i class="las la-angle-double-right"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Digital Marketing</span>
+                                        <span class="icon"><i class="las la-angle-double-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget-single-area resume-widgets">
+                            <h3 class="title">Resume</h3>
+                            <ul class="widget-nav-list category-item-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Get Resume.pdf</span>
+                                        <span class="icon"><i class="las la-file-pdf"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Get Resume.doc</span>
+                                        <span class="icon"><i class="las la-file-word"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Get Resume.ppt</span>
+                                        <span class="icon"><i class="las la-file-powerpoint"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget-single-area recentpost-widgets">
+                            <h3 class="title">Recent Post</h3>
+                            <ul class="recent-blog-item-list">
+                                <li>
+                                    <a href="#" class="image">
+                                        <img src="./assets/img/recent-blog-img-1.webp" alt="">
+                                    </a>
+                                    <div class="content">
+                                        <h4 class="title">
+                                            <a href="#">
+                                                Mistakes You Can Easily Avoid.
+                                            </a>
+                                        </h4>
+                                        <div class="post-meta">
+                                            <i class="las la-calendar"></i>
+                                            09 Apr, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="image">
+                                        <img src="./assets/img/recent-blog-img-2.webp" alt="">
+                                    </a>
+                                    <div class="content">
+                                        <h4 class="title">
+                                            <a href="#">
+                                                Mistakes You Can Easily Avoid.
+                                            </a>
+                                        </h4>
+                                        <div class="post-meta">
+                                            <i class="las la-calendar"></i>
+                                            09 Apr, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="image">
+                                        <img src="./assets/img/recent-blog-img-3.webp" alt="">
+                                    </a>
+                                    <div class="content">
+                                        <h4 class="title">
+                                            <a href="#">
+                                                Mistakes You Can Easily Avoid.
+                                            </a>
+                                        </h4>
+                                        <div class="post-meta">
+                                            <i class="las la-calendar"></i>
+                                            09 Apr, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="image">
+                                        <img src="./assets/img/recent-blog-img-4.webp" alt="">
+                                    </a>
+                                    <div class="content">
+                                        <h4 class="title">
+                                            <a href="#">
+                                                Mistakes You Can Easily Avoid.
+                                            </a>
+                                        </h4>
+                                        <div class="post-meta">
+                                            <i class="las la-calendar"></i>
+                                            09 Apr, 2021
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget-single-area">
+                            <h3 class="title">Follow Me</h3>
+                            <div class="social-link">
+                                <a href="#"><i class="lab la-facebook-f"></i></a>
+                                <a href="#"><i class="lab la-dribbble"></i></a>
+                                <a href="#"><i class="lab la-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Company****************-->
+
+    <div class="company-section pb-135 pt-135 bg-secondary-blue">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="subtitle">
+                    <span>||</span>Favourite Clients
+                </h4>
+                <h4 class="title">
+                    Work With Trusted Company.
+                </h4>
+            </div>
+
+            <div class="company-logo">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/company-logo-1.webp" alt="">
+                                <img src="./assets/img/1.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/company-logo-2.webp" alt="">
+                                <img src="./assets/img/2.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/company-logo-3.webp" alt="">
+                                <img src="./assets/img/3.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-item">
+                            <a href="#" class="image">
+                                <img src="./assets/img/company-logo-4.webp" alt="">
+                                <img src="./assets/img/4.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************Footer****************-->
+
+    <footer>
+        <div class="footer-section pt-135 bg-dark-blue">
+            <div class="shape-left">
+
+            </div>
+            <div class="shape-right">
+
+            </div>
+            <div class="container">
+                <div class="footer-header">
+                    <div class="section-header">
+                        <h4 class="subtitle">
+                            <span>||</span>Get Latest update
+                        </h4>
+                        <h4 class="title">
+                            Subscribe for Newsletter
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer-newsletter pb-135" action="#">
+                    <form>
+                        <input type="email" placeholder="demo@example.com">
+                        <button class="submit-btn" type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+                <div class="footer-contact pb-135">
+                    <div class="single-item">
+                        <span> <i class="las la-phone"></i>
+                        </span>
+                        <h4 class="text">0123456789</h4>
+                    </div>
+                    <div class="single-item">
+                        <span><i class="las la-envelope-open"></i></span>
+                        <h4 class="text">demo@gmail.com</h4>
+                    </div>
+                    <div class="single-item">
+                        <ul>
+                            <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="lab la-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="container">
+                    <div class="info-item">
+                        <div class="footer-copyright">
+                            © 2021
+                            <span>Lendex</span>
+                            Made with
+                            <span><i class="las la-heart"></i></span>
+                            by
+                            <span>HasThemes</span>
+                        </div>
+                        <div class="footer-logo">Lendex</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--================= Link Script Here =================-->
+    <!-- Vendor Script -->
+    <script src="./assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/vendor/owl.carousel.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

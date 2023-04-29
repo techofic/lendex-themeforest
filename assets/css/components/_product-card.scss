@@ -1,0 +1,28 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.product-card {
+    padding: 70px;
+    
+    &--icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 60px;
+    }
+    &--title {
+        font-size: 28px;
+        font-family: Poppins,sans-serif;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+    &--list {
+        li {
+            color: $secondaryColor;
+            margin-bottom: 15px;
+            span {
+                padding-right: 20px;
+            }
+        }
+    }
+}

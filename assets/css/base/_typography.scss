@@ -1,0 +1,21 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/*****************************
+    Add All Typography Here
+*****************************/
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Poppins';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primaryColor;
+    font-family: "Cormorant Garamond",serif;
+}
