@@ -44,3 +44,20 @@
         }
     }
 }
+
+// RESPONSIVE 
+
+@include breakpoint-max(767px){
+    .faq-list-single-item {
+        flex-direction: column;
+        gap: 40px;
+        .content {
+            width: 100%;
+        }
+    }  
+    .pagination-nav-list li {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }  
+}

@@ -109,3 +109,34 @@
         }
     }
 }
+
+// RESPONSIVE
+
+@include breakpoint-max(1199px) {
+    .breadcrumb-shape-top-left {
+        display: none;
+    }
+    .breadcrumb-shape-bottom-right {
+        display: none;
+    }
+}
+
+@include breakpoint-max(991px) {
+    .breadcrumb-box {
+        padding-top: 175px;
+        padding-bottom: 90px;
+        .breadcrumb-content .title {
+            font-size: 50px;
+        }    
+    }
+}
+
+@include breakpoint-max(767px) {
+    .breadcrumb-box {
+        padding-top: 130px;
+        padding-bottom: 45px;
+        .breadcrumb-content .title {
+            font-size: 40px;
+        }    
+    }
+}

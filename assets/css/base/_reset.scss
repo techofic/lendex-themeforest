@@ -33,25 +33,29 @@ a {
 h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-family: "Cormorant Garamond",serif;
+    font-weight: 400;
 }
 
-@media (min-width : 576px) {
-    .container {
-                max-width: 540px;
-            }
+@media (min-width: 576px) {
+    .container,.container-sm {
+        max-width:540px
+    }
 }
-@media (min-width : 768px) {
-    .container {
-                max-width: 720px;
-            }
+
+@media (min-width: 768px) {
+    .container,.container-md,.container-sm {
+        max-width:720px
+    }
 }
-@media (min-width : 992px) {
-    .container {
-                max-width: 960px;
-            }
+
+@media (min-width: 992px) {
+    .container,.container-lg,.container-md,.container-sm {
+        max-width:960px;
+    }
 }
-@media (min-width : 1200px) {
-    .container {
-                max-width: 1170px;
-            }
+
+@media (min-width: 1200px) {
+    .container,.container-lg,.container-md,.container-sm,.container-xl {
+        max-width:1170px
+    }
 }

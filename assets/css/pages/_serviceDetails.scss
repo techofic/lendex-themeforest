@@ -13,3 +13,12 @@
         }
     }
 }
+
+@include breakpoint-max(1199px) {
+    .service-details--box {
+        .row {
+            flex-direction: column-reverse;
+            gap: 50px;
+        }
+    }
+}

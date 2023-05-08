@@ -42,7 +42,7 @@
 
     .subtitle {
         font-size: 50px;
-        font-weight: 600;
+        font-weight: 400;
         margin-top: 60px;
         margin-bottom: 30px;
     }
@@ -247,5 +247,127 @@
         &:hover {
             background-color: rgba(255,255,255,.1) ;
         }
+    }
+}
+
+@include breakpoint-max(1199px) {
+    .default-content-style {
+        .title {
+            font-size: 53px;
+        }
+        .subtitle {
+            font-size: 45px;
+        }
+        .pricing-area {
+            grid-template-columns: repeat(1, 1fr);
+            .single-item .price-btn {
+                padding: 0px 40px;
+            }
+        }
+    }
+}
+
+@include breakpoint-max(991px) {
+    .default-content-style {
+        .title {
+            font-size: 48px;
+        }
+        .subtitle {
+            font-size: 38px;
+        }
+        .sub-title {
+            font-size: 38px;
+        }
+    }
+}
+
+@include breakpoint-max(767px) {
+    .default-content-style {
+        .content-list-with-text li {
+            flex-direction: column;
+            align-items: flex-start;
+            .left {
+                width: 100%;
+                margin-bottom: 10px;
+                .list-title {
+                    font-size: 26px;
+                }
+            }
+            .right {
+                width: 100%;
+            }
+        }
+        .title {
+            font-size: 37px;
+        }
+        .subtitle {
+            font-size: 36px;
+        }
+        .sub-title {
+            font-size: 36px;
+        }
+        .pricing-area .single-item {
+            .name {
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            .value {
+                font-size: 46px;
+            }
+            .list-items {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .content-list-with-icon li {
+            flex-direction: column;
+            gap: 25px;
+
+            .right {
+                width: 100%;
+            }
+        } 
+    }
+    .default-form-group textarea {
+        min-height: 180px;
+    }  
+    .social-link a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    } 
+    .default-content-style .content-inner-image.image-double .image {
+        height: 100%;
+        width: 100%;
+    }    
+}
+
+@include breakpoint-max(575px) {
+    .default-content-style {
+        .title {
+            font-size: 34px;
+        }
+        .subtitle {
+            font-size: 30px;
+        }
+        .sub-title {
+            font-size: 30px;
+        }
+        .content-list-with-text li .left .list-title {
+            font-size: 24px;
+        }
+        .content-inner-image.image-double {
+            flex-direction: column;
+            gap: 30px;
+            .image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpoint-max(480px) {
+    .default-content-style .content-inner-image.image-double .image {
+        height: 420px;
     }
 }

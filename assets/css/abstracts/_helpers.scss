@@ -56,3 +56,26 @@
 .bg-light-blue {
     background-color: #30313d;
 }
+
+// RESPONSIVE
+
+@include breakpoint-max(1199px) {
+    .pt-135 {
+        padding-top: 115px;
+    }
+    .pb-135 {
+        padding-bottom: 115px;
+    }
+}
+
+@include breakpoint-max(991px) {
+    .pt-135 {
+        padding-top: 75px;
+    }
+    .pb-135 {
+        padding-bottom: 75px;
+    }
+    .pb-150 {
+        padding-bottom: 75px;
+    }
+}

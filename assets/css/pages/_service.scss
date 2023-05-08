@@ -6,5 +6,32 @@
     &-cards {
         position: relative;
         z-index: 2;
+        .product-card {
+            height: 514px;
+        }
+    }
+}
+
+// RESPONSIVE
+
+@include breakpoint-max(1199px) {
+    .service-cards {
+        .col-lg-4 {
+            width: 50%;
+        }
+    }
+}
+
+@include breakpoint-max(991px) {
+    .product-card {
+        padding: 50px;
+    }
+}
+
+@include breakpoint-max(767px) {
+    .service-cards {
+        .col-lg-4 {
+            width: 100%;
+        }
     }
 }

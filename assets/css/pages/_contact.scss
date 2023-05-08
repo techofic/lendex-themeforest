@@ -3,7 +3,7 @@
 @use '../abstracts/mixins' as *;
 
 .contact-sidebar-wrapper {
-    bottom: calc(0% + 260px);
+    bottom: calc(-100% + 330px);
     position: absolute;
     margin-top: 0;
     .contact-sidebar {
@@ -64,5 +64,49 @@
             margin-top: 30px;
             margin-bottom: 35px;
         }
+    }
+}
+
+// RESPONSIVE
+
+@include breakpoint-max(1199px){
+    .contact-form-wrapper .content .title {
+        font-size: 55px;
+    }
+}
+
+@include breakpoint-max(991px){
+    .contact-sidebar-wrapper {
+        bottom: 0;
+        position: initial;
+        margin-top: 60px;
+    }
+    .map iframe {
+        height: 400px;
+    }
+    .contact-form-wrapper .content .title {
+        font-size: 45px;
+    }
+}
+@include breakpoint-max(991px){
+    .contact-form-wrapper .content .title {
+        font-size: 40px;
+    }
+}
+
+@include breakpoint-max(767px){
+    .contact-sidebar-wrapper {
+        margin-top: 0; 
+        .contact-sidebar {
+            margin-bottom: 80px;
+            margin-top: 0;
+            padding: 50px 30px 50px 30px;
+        }
+    } 
+}
+
+@include breakpoint-max(575px){
+    .contact-form-wrapper .content .title {
+        font-size: 36px;
     }
 }

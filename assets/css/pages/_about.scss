@@ -81,16 +81,18 @@
         &:first-child>.content>.left {
             border-top: 1px solid rgba(255, 255, 255, .1);
         }
+
         &:last-child>.content>.left {
             border-bottom: 1px solid rgba(255, 255, 255, .1);
         }
+
         .content {
             align-items: center;
             flex-direction: row;
             display: flex;
 
             .left {
-                padding: 103px 30px 105px 170px;
+                padding: 150px 30px 105px 170px;
                 margin-right: 100px;
                 border-left: 1px solid rgba(255, 255, 255, .1);
                 border-right: 1px solid rgba(255, 255, 255, .1);
@@ -99,8 +101,11 @@
                 width: 300px;
                 margin-bottom: 0;
                 position: relative;
+
                 .year {
                     display: block;
+                    color: $secondaryColor;
+
                     &::after {
                         position: absolute;
                         content: "";
@@ -113,18 +118,22 @@
                     }
                 }
             }
+
             .right {
                 width: calc(100% - 400px);
                 margin-bottom: 35px;
+
                 .title {
                     font-size: 35px;
                     font-weight: 400;
                     margin-bottom: 25px;
                 }
+
                 p:last-child {
                     margin-top: 25px;
                     margin-bottom: 0;
                 }
+
                 .institute-name {
                     color: $secondaryColor;
                 }
@@ -137,4 +146,111 @@
 .about-btn {
     margin-top: 95px;
     padding: 6px 60px;
+}
+
+// RESPONSIVE
+
+@include breakpoint-max(1199px) {
+    .video-info-content {
+        .sub-title {
+            font-size: 36px;
+        }
+    }
+
+    .about-btn {
+        margin-top: 95px;
+        padding: 0 40px;
+    }
+
+    .resume-tab .nav-item button {
+        font-size: 50px;
+    }
+}
+
+@include breakpoint-max(991px) {
+    .video-card {
+        height: 336px;
+    }
+
+    .about-btn {
+        margin-top: 75px;
+    }
+
+    .video-info-display-box {
+        .video-info-display-wrapper {
+            .row {
+                gap: 70px;
+            }
+        }
+    }
+
+    .video-info-content {
+        text-align: center;
+
+        .title {
+            font-size: 60px;
+        }
+
+        .sub-title {
+            font-size: 34px;
+        }
+    }
+
+    .resume-tab-list-single-item .content {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            margin-right: 0;
+            border: 1px solid rgba(255, 255, 255, .1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+}
+
+@include breakpoint-max(991px) {
+    .video-info-content {
+        .title {
+            font-size: 50px;
+        }
+        .sub-title {
+            font-size: 32px;
+        }
+    }
+    .resume-tab {
+        margin-bottom: 60px;
+        .nav-item button {
+            font-size: 40px;
+        }  
+        &-list-single-item .content {
+            .right {
+                margin-bottom: 60px;
+                .title {
+                    font-size: 34px;
+                }  
+            }
+        }
+    }
+}
+
+@include breakpoint-max(575px){
+    .resume-tab.nav {
+        flex-direction: column;
+        .nav-item {
+            width: 100%;
+            &:not(:last-child){
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .resume-tab .nav-item button {
+        font-size: 36px;
+    }
+    .resume-info-display-box {
+        padding-bottom: 15px;
+    }
 }

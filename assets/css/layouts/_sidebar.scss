@@ -4,9 +4,12 @@
 
 
 .sidebar-widget-single-area {
-    margin-bottom: 80px;
     padding: 60px 50px 75px 50px;
     background: #252734;
+
+    &:not(:last-child){
+        margin-bottom: 80px;
+    }
 
     .title {
         font-size: 48px;
@@ -113,5 +116,41 @@
             border: 1px solid #fff;
             background: #252734;
         }
+    }
+}
+
+
+@include breakpoint-max(1199px) {
+    .sidebar-widget-single-area .title {
+        font-size: 40px;
+    }
+}
+@include breakpoint-max(991px) {
+    .sidebar-widget-single-area .title {
+        font-size: 40px;
+    }
+}
+@include breakpoint-max(767px) {
+    .sidebar-widget-single-area {
+        &:not(:last-child){
+            margin-bottom: 50px
+        }
+    }
+    .sidebar-widget-single-area {
+        .title {
+            font-size: 34px;
+        }
+        .social-link a {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 18px;
+        }
+    }
+}
+@include breakpoint-max(575px) {
+    .sidebar-widget-single-area .title {
+        font-size: 34px;
+        margin-bottom: 30px;
     }
 }
